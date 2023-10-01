@@ -1,6 +1,11 @@
-input_list = input("Введіть список цілих чисел, розділених пробілами: ").split()
-number_to_find = int(input("Введіть число, яке потрібно знайти: "))
+input_list = input("Введіть елементи списку цілих чисел, розділені пробілами: ").split()
+
 input_list = [int(x) for x in input_list]
-count = input_list.count(number_to_find)
-print(f"Число {number_to_find} зустрічається {count} разів у введеному списку.")
+
+sum_of_elements = sum(input_list)
+
+average = sum_of_elements / len(input_list)
+
+print(f"Сума всіх елементів: {sum_of_elements}")
+print(f"Середнє арифметичне: {average}")
 
